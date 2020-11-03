@@ -20,7 +20,7 @@ namespace FullStackTest.Services
             throw new NotImplementedException();
         }
 
-        public int Range(int[] inputs)
+        public int Median(int[] inputs)
         {
             throw new NotImplementedException();
         }

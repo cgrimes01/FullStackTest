@@ -38,27 +38,27 @@ namespace FullStackTestTests
         }
 
         [Test]
-        public void RangeInputA()
+        public void MedianInputA()
         {
-            Assert.AreEqual(_statisticsService.Range(InputA()), 2);
+            Assert.AreEqual(_statisticsService.Median(InputA()), 2);
         }
 
         [Test]
         public void MedianInputB()
         {
-            Assert.AreEqual(_statisticsService.Range(InputB()), 4);
+            Assert.AreEqual(_statisticsService.Median(InputB()), 4);
         }
 
         [Test]
         public void MedianInputC()
         {
-            Assert.AreEqual(_statisticsService.Range(InputC()), 4);
+            Assert.AreEqual(_statisticsService.Median(InputC()), 4);
         }
 
         [Test]
         public void MedianInputD()
         {
-            Assert.AreEqual(_statisticsService.Range(InputD()), 4000000000);
+            Assert.AreEqual(_statisticsService.Median(InputD()), 4000000000);
         }
 
         [Test]
