@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FullStackTest", "FullStackTest.csproj", "{CFBAA719-2531-4DFF-A40B-E1F04DB10700}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FullStackTest", ".\FullStackTest\FullStackTest.csproj", "{CFBAA719-2531-4DFF-A40B-E1F04DB10700}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FullStackTestTests", "..\FullStackTestTests\FullStackTestTests.csproj", "{60DE9116-D84B-43F9-AA0F-23342EB0E23B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FullStackTestTests", ".\FullStackTestTests\FullStackTestTests.csproj", "{60DE9116-D84B-43F9-AA0F-23342EB0E23B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
