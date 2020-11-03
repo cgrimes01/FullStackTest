@@ -10,11 +10,10 @@ type HomeProps =
   & typeof Input.actionCreators // ... plus action creators we've requested
   & typeof Statistics.actionCreators;
 
-
 class Home extends React.PureComponent<HomeProps> {
   // This method is called when the component is first added to the document
   public componentDidMount() {
-    this.RequestData();
+    // this.RequestData();
   }
 
   // This method is called when the route parameters change
@@ -36,10 +35,7 @@ class Home extends React.PureComponent<HomeProps> {
     this.props.requestStatistics(this.props.input ? this.props.input.input : []);
   }
 
-
   private renderStatistics() {
-    
-
     return (
       <div className="d-flex justify-content-between">
         {this.props.statistics && this.props.statistics.isLoading && <span>Loading...</span>}

@@ -22,7 +22,7 @@ namespace FullStackTestTests
         [Test]
         public void SumInputA()
         {
-            Assert.AreEqual(_statisticsService.Sum(InputA()), 10);
+            Assert.AreEqual(_statisticsService.Sum(InputA()), 11);
         }
 
         [Test]
