@@ -23,6 +23,7 @@ namespace FullStackTest.Controllers
         }
 
         [HttpGet]
+        [Route("/sum")]
         public IActionResult Sum([FromQuery] int[] inputs)
         {
             return Ok(_statisticsService.Sum(inputs));
