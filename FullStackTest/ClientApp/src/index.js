@@ -1,6 +1,5 @@
 import "./style.scss";
 import { getKeyPressResult } from './services/calculator';
-import { requestStatistics } from './services/statistics';
 
 const calculator = document.querySelector('.calculator');
 const keys = calculator.querySelector('.calculator__keys');
@@ -12,9 +11,11 @@ keys.addEventListener('click', e => {
     const action = key.dataset.action;
 
     if (!action) {
-      display.textContent = getKeyPressResult(key);
       console.log('number key!');
+    } else {
+      console.log(`${action} key!`);
     }
-    requestStatistics.fibonaci(2);
+
+    display.textContent = getKeyPressResult(key);
   }
  });
