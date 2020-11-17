@@ -1,11 +1,10 @@
-export const requestStatistics = 
+export const requestStatistics = {
   sum: (inputs) => {
-    let url = 'statistics?'
+    let url = 'statistics/sum?'
     inputs.forEach(x => {
       url += `inputs=${x}&`;
     });
     fetch(url)
-    .then(response => response.json()
-  }
-  
-);
+      .then(response => response.json());
+  },
+};

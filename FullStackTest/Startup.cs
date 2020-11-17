@@ -23,7 +23,6 @@ namespace FullStackTest
             services.AddControllersWithViews();
             services.AddTransient<IStatisticsService, StatisticsService>();
 
-            // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp/build";

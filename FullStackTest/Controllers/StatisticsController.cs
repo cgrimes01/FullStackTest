@@ -22,11 +22,11 @@ namespace FullStackTest.Controllers
             _statisticsService = calculatorService;
         }
 
-        [HttpGet]
-        [Route("/sum")]
+        [HttpGet("sum")]
         public IActionResult Sum([FromQuery] int[] inputs)
         {
-            return Ok(_statisticsService.Sum(inputs));
+            return Ok(10);
+            //return Ok(_statisticsService.Sum(inputs));
         }
     }
 
