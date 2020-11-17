@@ -4,9 +4,12 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: {
+    app: './src/index.js',
+    styles: './src/style.scss'
+  },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'build')
   },
   plugins: [
@@ -28,17 +31,6 @@ module.exports = {
           {
             // Interprets `@import` and `url()` like `import/require()` and will resolve them
             loader: 'css-loader'
-          },
-          {
-            // Loader for webpack to process CSS with PostCSS
-            loader: 'postcss-loader',
-            options: {
-              plugins: function () {
-                return [
-                  require('autoprefixer')
-                ];
-              }
-            }
           },
           {
             // Loads a SASS/SCSS file and compiles it to CSS
