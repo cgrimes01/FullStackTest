@@ -3,9 +3,8 @@ namespace FullStackTest.Interfaces
 {
     public interface IStatisticsService
     {
-        int Sum(int[] inputs);
-        int Median(int[] inputs);
-        int Mean(int[] inputs);
+        int Fibonacci(int input);
+        int Mean(int[] input);
     }
 
     
