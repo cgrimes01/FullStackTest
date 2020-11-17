@@ -1,10 +1,10 @@
-let displayedNum = 0;
+let number = 0;
 
 const numberPress = (keyContent) => {
   if (displayedNum === 0) {
-    displayedNum = keyContent;
+    number = parseInt(keyContent, 10);
   } else {
-    displayedNum = displayedNum + keyContent;
+    number = parseInt(number + keyContent, 10);
   }
 }
 
@@ -29,5 +29,5 @@ export const getKeyPressResult = (key) => {
     numberPress(keyContent);
   }
 
-  return displayedNum;
+  return number;
 };
