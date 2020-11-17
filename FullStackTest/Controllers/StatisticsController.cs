@@ -22,11 +22,10 @@ namespace FullStackTest.Controllers
             _statisticsService = calculatorService;
         }
 
-        [HttpGet("sum")]
-        public IActionResult Sum([FromQuery] int[] inputs)
+        [HttpGet("fibonaci")]
+        public IActionResult Fibonaci([FromQuery] int[] inputs)
         {
             return Ok(10);
-            //return Ok(_statisticsService.Sum(inputs));
         }
     }
 

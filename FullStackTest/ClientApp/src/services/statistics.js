@@ -1,9 +1,6 @@
 export const requestStatistics = {
-  sum: (inputs) => {
-    let url = 'statistics/sum?'
-    inputs.forEach(x => {
-      url += `inputs=${x}&`;
-    });
+  fibonaci: (sequence) => {
+    let url = `statistics/fibonaci?input=${sequence}`
     fetch(url)
       .then(response => response.json());
   },
