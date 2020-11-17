@@ -1,7 +1,7 @@
-let displayedNum = '0';
+let displayedNum = 0;
 
 const numberPress = (keyContent) => {
-  if (displayedNum === '0') {
+  if (displayedNum === 0) {
     displayedNum = keyContent;
   } else {
     displayedNum = displayedNum + keyContent;
