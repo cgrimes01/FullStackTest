@@ -17,7 +17,7 @@ namespace FullStackTest.Services
                 fib(n) = fib(n-1) + fib(n-2)
             */
 
-            throw new NotImplementedException();
+            return 0;
         }
 
         public int Mean(int[] input)

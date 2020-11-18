@@ -23,9 +23,10 @@ namespace FullStackTest.Controllers
         }
 
         [HttpGet("fibonacci")]
-        public IActionResult Fibonacci([FromQuery] int[] inputs)
+        public IActionResult Fibonacci([FromQuery] int input)
         {
-            return Ok(10);
+            var fibResult = _statisticsService.Fibonacci(input);
+            return Ok(fibResult);
         }
     }
 
