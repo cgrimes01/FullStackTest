@@ -1,7 +1,7 @@
 let number = 0;
 
 const numberPress = (keyContent) => {
-  if (displayedNum === 0) {
+  if (number === 0) {
     number = parseInt(keyContent, 10);
   } else {
     number = parseInt(number + keyContent, 10);
