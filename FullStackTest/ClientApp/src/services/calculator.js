@@ -6,25 +6,14 @@ const numberPress = (keyContent) => {
   } else {
     number = parseInt(number + keyContent, 10);
   }
-}
-
-const actionPress = (action) => {
-  if (
-    action === 'add' ||
-    action === 'subtract' ||
-    action === 'multiply' ||
-    action === 'divide'
-  ) {
-    calculator.dataset.previousKeyType = 'operator';
-  }
-}
+};
 
 export const getKeyPressResult = (key) => {
   const action = key.dataset.action;
   const keyContent = key.textContent;
 
   if(action) {
-    actionPress(action, key);
+    // Add logic for actions
   } else {
     numberPress(keyContent);
   }
