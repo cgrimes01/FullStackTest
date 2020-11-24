@@ -1,11 +1,8 @@
 
 namespace FullStackTest.Interfaces
 {
-    public interface IStatisticsService
+    public interface ICalculatorService
     {
         int Fibonacci(int input);
-        int Mean(int[] input);
     }
-
-    
 }

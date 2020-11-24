@@ -3,7 +3,7 @@ using System;
 
 namespace FullStackTest.Services
 {
-    public class StatisticsService: IStatisticsService
+    public class CalculatorService : ICalculatorService
     {
         public int Fibonacci(int input)
         {
@@ -18,11 +18,6 @@ namespace FullStackTest.Services
             */
 
             return 0;
-        }
-
-        public int Mean(int[] input)
-        {
-            throw new NotImplementedException();
         }
     }
 }

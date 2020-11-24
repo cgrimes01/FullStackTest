@@ -21,7 +21,7 @@ namespace FullStackTest
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddTransient<IStatisticsService, StatisticsService>();
+            services.AddTransient<ICalculatorService, CalculatorService>();
 
             services.AddSpaStaticFiles(configuration =>
             {

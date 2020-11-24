@@ -10,15 +10,12 @@ namespace FullStackTest.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class StatisticsController : ControllerBase
+    public class CalculatorController : ControllerBase
     {
-        private readonly IStatisticsService _statisticsService;
+        private readonly ICalculatorService _statisticsService;
 
-        private readonly ILogger<StatisticsController> _logger;
-
-        public StatisticsController(ILogger<StatisticsController> logger, IStatisticsService calculatorService)
+        public CalculatorController(ICalculatorService calculatorService)
         {
-            _logger = logger;
             _statisticsService = calculatorService;
         }
 
