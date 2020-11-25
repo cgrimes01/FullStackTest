@@ -21,10 +21,10 @@ describe('Calculator', () => {
     const { getByTestId, getByRole } = render(<Calculator/>);
 
     const oneButton = getByRole('button', { name: '1' });
-    const clearButotn = getByRole('button', { name: 'AC' });
+    const clearButton = getByRole('button', { name: 'AC' });
 
     oneButton.click();
-    clearButotn.click();
+    clearButton.click();
 
     expect(getByTestId('calculator-display')).toHaveTextContent('0');
   });
