@@ -3,7 +3,7 @@ using NUnit.Framework;
 
 namespace StatisticsTests
 {
-    public class StatisticsTests_Mean
+    public class Mean
     {
         private StatisticsService _statisticsService;
 

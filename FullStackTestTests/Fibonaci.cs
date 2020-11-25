@@ -3,7 +3,7 @@ using NUnit.Framework;
 
 namespace CalculatorTests
 {
-    public class CalculatorServiceFibonaciTests
+    public class Fibonaci
     {
         private CalculatorService _calculatorService;
         [SetUp]

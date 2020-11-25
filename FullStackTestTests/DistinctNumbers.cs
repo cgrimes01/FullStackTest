@@ -3,7 +3,7 @@ using NUnit.Framework;
 
 namespace StatisticsTests
 {
-    public class StatisticsTests_DistinctNumbers
+    public class DistinctNumbers
     {
         private StatisticsService _statisticsService;
 

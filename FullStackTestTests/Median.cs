@@ -3,7 +3,7 @@ using NUnit.Framework;
 
 namespace StatisticsTests
 {
-    public class StatisticsTests_Median
+    public class Median
     {
         private StatisticsService _statisticsService;
 
