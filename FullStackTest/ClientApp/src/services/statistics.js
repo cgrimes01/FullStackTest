@@ -1,6 +1,6 @@
 export const requestStatistics = {
   fibonaci: (sequence) => {
-    const url = `statistics/fibonacci?input=${sequence}`
+    const url = `calculator/fibonacci?input=${sequence}`
     return fetch(url).then(response => response.text());
   },
 };
