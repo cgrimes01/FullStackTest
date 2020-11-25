@@ -15,7 +15,7 @@ namespace FullStackTestTests
         {
             var input = new[] { 1000, -100, 5, 11, 22, 5, 16, 5 };
             var expected = new[] { 5 };
-            Assert.AreEqual(_statisticsService.Mode(input), expected);
+            Assert.AreEqual(expected, _statisticsService.Mode(input));
         }
 
         [Test]
@@ -23,7 +23,7 @@ namespace FullStackTestTests
         {
             var input = new[] { 1, 2, 3, 4, 5 };
             var expected = new[] { 1, 2, 3, 4, 5 };
-            Assert.AreEqual(_statisticsService.Mode(input), expected);
+            Assert.AreEqual(expected, _statisticsService.Mode(input));
         }
 
         [Test]
@@ -31,7 +31,7 @@ namespace FullStackTestTests
         {
             var input = new[] { 3 };
             var expected = new[] { 3 };
-            Assert.AreEqual(_statisticsService.Mode(input), expected);
+            Assert.AreEqual(expected, _statisticsService.Mode(input));
         }
 
         [Test]
@@ -39,7 +39,7 @@ namespace FullStackTestTests
         {
             var input = new[] { -2000000000, 2000000000 };
             var expected = new[] { -2000000000, 2000000000 };
-            Assert.AreEqual(_statisticsService.Mode(input), expected);
+            Assert.AreEqual(expected, _statisticsService.Mode(input));
         }
 
         [Test]
@@ -47,7 +47,7 @@ namespace FullStackTestTests
         {
             var input = new[] { 4, 4, 4, 4, 4, 4, 4, 4, 4, 4 };
             var expected = new[] { 4 };
-            Assert.AreEqual(_statisticsService.Mode(input), expected);
+            Assert.AreEqual(expected, _statisticsService.Mode(input));
         }
     }
 }

@@ -12,38 +12,49 @@ namespace FullStackTestTests
         [Test]
         public void Fibonacci0()
         {
-            Assert.AreEqual(_calculatorService.Fibonacci(1), 0);
-
+            var input = 0;
+            var expected = 0;
+            Assert.AreEqual(expected, _calculatorService.Fibonacci(input));
         }
 
         [Test]
         public void Fibonacci1()
         {
-            Assert.AreEqual(_calculatorService.Fibonacci(1), 1);
+            var input = 1;
+            var expected = 1;
+            Assert.AreEqual(expected, _calculatorService.Fibonacci(input));
         }
 
         [Test]
         public void Fibonacci2()
         {
-            Assert.AreEqual(_calculatorService.Fibonacci(2), 1);
+            var input = 2;
+            var expected = 1;
+            Assert.AreEqual(expected, _calculatorService.Fibonacci(input));
         }
 
         [Test]
         public void Fibonaccic5()
         {
-            Assert.AreEqual(_calculatorService.Fibonacci(5), 5);
+            var input = 5;
+            var expected = 5;
+            Assert.AreEqual(expected, _calculatorService.Fibonacci(input));
         }
 
         [Test]
         public void Fibonacci10()
         {
-            Assert.AreEqual(_calculatorService.Fibonacci(10), 55);
+            var input = 10;
+            var expected = 55;
+            Assert.AreEqual(expected, _calculatorService.Fibonacci(input));
         }
 
         [Test]
         public void Fibonacci50()
         {
-            Assert.AreEqual(_calculatorService.Fibonacci(50), 12586269025);
+            var input = 50;
+            var expected = 12586269025;
+            Assert.AreEqual(expected, _calculatorService.Fibonacci(input));
         }
     }
 }

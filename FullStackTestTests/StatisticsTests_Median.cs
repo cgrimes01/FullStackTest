@@ -15,7 +15,7 @@ namespace FullStackTestTests
         {
             var input = new[] { 1, 2, 3, 4, 5 };
             float expected = 3;
-            Assert.AreEqual(_statisticsService.Median(input), expected);
+            Assert.AreEqual(expected, _statisticsService.Median(input));
         }
 
         [Test]
@@ -23,7 +23,7 @@ namespace FullStackTestTests
         {
             var input = new[] { -5, -3, -1 };
             float expected = -3;
-            Assert.AreEqual(_statisticsService.Median(input), expected);
+            Assert.AreEqual(expected, _statisticsService.Median(input));
         }
 
         [Test]
@@ -31,7 +31,7 @@ namespace FullStackTestTests
         {
             var input = new[] { 3 };
             float expected = 3;
-            Assert.AreEqual(_statisticsService.Median(input), expected);
+            Assert.AreEqual(expected, _statisticsService.Median(input));
         }
 
         [Test]
@@ -39,7 +39,7 @@ namespace FullStackTestTests
         {
             var input = new[] { -2000000000, 2000000000 };
             float expected = 0;
-            Assert.AreEqual(_statisticsService.Median(input), expected);
+            Assert.AreEqual(expected, _statisticsService.Median(input));
         }
 
         [Test]
@@ -47,7 +47,7 @@ namespace FullStackTestTests
         {
             var input = new[] { 1, 2, 4, 5 };
             float expected = 3;
-            Assert.AreEqual(_statisticsService.Median(input), expected);
+            Assert.AreEqual(expected, _statisticsService.Median(input));
         }
 
         [Test]
@@ -55,7 +55,7 @@ namespace FullStackTestTests
         {
             var input = new[] { 1, 2, 3, 4 };
             float expected = 2.5f;
-            Assert.AreEqual(_statisticsService.Median(input), expected);
+            Assert.AreEqual(expected, _statisticsService.Median(input));
         }
     }
 }
