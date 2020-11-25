@@ -22,7 +22,7 @@ namespace FullStackTestTests
         public void NegativeNumbers()
         {
             var input = new[] { -5, -5, -3, -2, -1 };
-            var expected = new[] { -5, -3, -2, -1 };
+            var expected = new[] { -3, -2, -1 };
             Assert.AreEqual(expected, _statisticsService.DistinctNumbers(input));
         }
 
