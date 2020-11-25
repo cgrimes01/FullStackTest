@@ -1,7 +1,7 @@
 using FullStackTest.Services;
 using NUnit.Framework;
 
-namespace FullStackTestTests
+namespace CalculatorTests
 {
     public class CalculatorServiceFibonaciTests
     {

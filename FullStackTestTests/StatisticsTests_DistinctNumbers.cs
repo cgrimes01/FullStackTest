@@ -1,7 +1,7 @@
 ﻿using FullStackTest.Services;
 using NUnit.Framework;
 
-namespace FullStackTestTests
+namespace StatisticsTests
 {
     public class StatisticsTests_DistinctNumbers
     {
