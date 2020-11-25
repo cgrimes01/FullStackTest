@@ -5,7 +5,7 @@ namespace FullStackTestTests
 {
     public class CalculatorServiceFibonaciTests
     {
-        CalculatorService _calculatorService;
+        private CalculatorService _calculatorService;
         [SetUp]
         public void Setup() => _calculatorService = new CalculatorService();
 
@@ -15,6 +15,7 @@ namespace FullStackTestTests
             Assert.AreEqual(_calculatorService.Fibonacci(1), 0);
 
         }
+
         [Test]
         public void Fibonacci1()
         {
@@ -44,6 +45,5 @@ namespace FullStackTestTests
         {
             Assert.AreEqual(_calculatorService.Fibonacci(50), 12586269025);
         }
-
     }
 }
