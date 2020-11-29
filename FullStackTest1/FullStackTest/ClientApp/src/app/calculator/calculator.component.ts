@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { CalculatorService } from './calculator.service';
 
 @Component({
@@ -7,7 +7,9 @@ import { CalculatorService } from './calculator.service';
   styleUrls: ['./calculator.component.scss']
 })
 export class CalculatorComponent implements OnInit, AfterViewInit {
-  number: Number = 8;
+  number: number;
+
+  @ViewChild('calckeys', {static: false}) calcKeys: ElementRef;
 
   constructor(private calculatorService: CalculatorService) {}
 
@@ -15,8 +17,12 @@ export class CalculatorComponent implements OnInit, AfterViewInit {
     this.calculatorService.number.subscribe(number => this.number = number);
   }
 
+  ngAfterViewInit(): void {
+    const buttons = this.calcKeys.nativeElement.querySelectorAll('button');
+    buttons.forEach(button => button.addEventListener('click', this.onKeyPress.bind(this)));
+  }
 
-  ngAfterViewInit() {
-    // ...
+  onKeyPress(event?: MouseEvent): void {
+    this.calculatorService.keyPress(event.target);
   }
 }
