@@ -1,20 +1,18 @@
 # Calero-MDSL Full Stack Test
 
-# pre-requisites
-    Visual Studio 2019 Comunity Edition is free
-    Visual Studio Code (or equivalent IDE)
-    Node
-    Dotnet core 3.1 sdk
+PLEASE DO NOT COMPLETE ANY OF THIS WORK IN ADVANCE, YOU WILL BE GIVEN TASKS DURING AN INTERVIEW
 
-# Setup  
-    Clone the repository to your computer.
+## Pre-requisites
+- Visual Studio 2019 Comunity Edition is free
+- Visual Studio Code (or equivalent IDE)
+- Node
+- Dotnet core 3.1 sdk
 
-    Inside FullStackTest folder is a visual studio solution file open this in visual studio. Build solution.
+## Setup  
+1. Clone the repository, check-out the `vanilla-js` branch.
+2. Open the visual studio solution and build it (this should do an npm install in the ClientApp as well)
+3. Open the FullStackTest/ClientApp folder in VS Code (or equivalent IDE)
+4. We are using webpack watch. In the ClientApp there is a script called 'watch'. Do npm run watch to get this started.
+4. Run the visual studio solution, it should open a web browser showing the application.
 
-    Suggested: Open the FullStackTest/ClientApp folder in Visual Studio Code for best experience, a terminal at this location will also be useful for running react tests.
-
-    We are using webpack watch. In the ClientApp there is a script called 'watch'. Do npm run watch to get this started.
-	
-	Go back to the Visual Studio Solution and start the project. It should load a calculator provided by webpack watch.
-	
-	Test that you can make a change in the ClientApp and refresh the page and it should update.
+Check that making a change to the code in ClientApp and refreshing the page causes the browser to show the change.
