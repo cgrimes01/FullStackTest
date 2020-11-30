@@ -1,5 +1,7 @@
 # Calero-MDSL Full Stack Test
 
+PLEASE DO NOT COMPLETE ANY OF THIS WORK IN ADVANCE, YOU WILL BE GIVEN TASKS DURING AN INTERVIEW
+
 ## Pre-requisites
 - Visual Studio 2019 Comunity Edition is free
 - Visual Studio Code (or equivalent IDE)
