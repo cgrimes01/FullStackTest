@@ -1,14 +1,7 @@
-import "./style.scss";
-import { getKeyPressResult } from './services/calculator';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Calculator from './components/calculator';
 
-const calculator = document.querySelector('.calculator');
-const keys = calculator.querySelector('.calculator__keys');
-const display = document.querySelector('.calculator__display');
+import './style.scss';
 
-keys.addEventListener('click', e => {
-  if (e.target.matches('button')) {
-    const key = e.target;
-
-    display.textContent = getKeyPressResult(key);
-  }
-});
+ReactDOM.render(<Calculator />, document.getElementById('app'));
