@@ -6,6 +6,9 @@ namespace FullStackTest.Services.Statistics
     {
         public static int[] DistinctNumbers(int[] inputs)
         {
+            /*
+                Return all the distinct numbers from the given set of inputs. 
+            */
             throw new NotImplementedException();
         }
     } 
