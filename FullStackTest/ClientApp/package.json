@@ -39,6 +39,8 @@
     "react-dom": "^17.0.1"
   },
   "jest": {
-    "setupFilesAfterEnv": ["./jest.setup.js"]
+    "setupFilesAfterEnv": [
+      "./jest.setup.js"
+    ]
   }
 }
