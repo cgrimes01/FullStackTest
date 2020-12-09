@@ -1,4 +1,4 @@
-﻿using System;
+﻿using FullStackTest.Services.Statistics;
 
 namespace FullStackTest.Services
 {
@@ -6,22 +6,22 @@ namespace FullStackTest.Services
     {
         public float Mean(int[] inputs)
         {
-            throw new NotImplementedException();
+            return Calculations.Mean(inputs);
         }
 
         public int[] Mode(int[] inputs)
         {
-            throw new NotImplementedException();
+            return Calculations.Mode(inputs);
         }
 
         public float Median(int[] inputs)
         {
-            throw new NotImplementedException();
+            return Calculations.Median(inputs);
         }
 
         public int[] DistinctNumbers(int[] inputs)
         {
-            throw new NotImplementedException();
+            return Calculations.DistinctNumbers(inputs);
         }
     }
 }
