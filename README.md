@@ -1,11 +1,11 @@
 # Calero-MDSL Full Stack Test
 
-You Will Be Asked To Use A Specific Branch
-Please Clone Down This Repository And Then Checkout The Given Branch
+You will be asked to use a specific branch.
+Please clone down this repository and then checkout the requested branch.
 
 1. VANILLA-JS
 2. REACT
 3. ANGULAR
 
-There Will Be Specifc Instructions In Each Branches Readme
-Please Follow These But Do Not Complete Any Work In Advance Of An Interview
+There will be specifc instructions in each branch's README.
+Please follow these instructions but do not complete any work in advance of an interview.
