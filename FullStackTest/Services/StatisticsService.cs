@@ -23,5 +23,10 @@ namespace FullStackTest.Services
         {
             return Calculations.DistinctNumbers(inputs);
         }
+
+        public long Range(int[] inputs)
+        {
+            return Calculations.Range(inputs);
+        }
     }
 }
