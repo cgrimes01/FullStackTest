@@ -6,7 +6,7 @@ module.exports = {
   mode: 'development',
   entry: {
     app: './src/index.js',
-    styles: './src/style.scss'
+    styles: './src/style.css'
   },
   output: {
     filename: '[name].js',
@@ -22,7 +22,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(scss)$/,
+        test: /\.(css)$/,
         use: [
           {
             // Adds CSS to the DOM by injecting a `<style>` tag
@@ -32,10 +32,6 @@ module.exports = {
             // Interprets `@import` and `url()` like `import/require()` and will resolve them
             loader: 'css-loader'
           },
-          {
-            // Loads a SASS/SCSS file and compiles it to CSS
-            loader: 'sass-loader'
-          }
         ]
       }
     ]

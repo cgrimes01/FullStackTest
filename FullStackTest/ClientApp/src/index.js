@@ -1,4 +1,4 @@
-import "./style.scss";
+import "./style.css";
 import { getKeyPressResult } from './services/calculator';
 
 const calculator = document.querySelector('.calculator');
