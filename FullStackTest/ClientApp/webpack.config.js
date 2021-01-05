@@ -47,8 +47,9 @@ module.exports = {
     compress: true,
     port: 9000,
     proxy: {
-      '*': {
-        target: 'http://localhost:44390',
+      '**': {
+        target: 'http://localhost:4925',
+        secure: false,
       }
     },
   },
