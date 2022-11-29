@@ -3,10 +3,10 @@
 PLEASE DO NOT COMPLETE ANY OF THIS WORK IN ADVANCE, YOU WILL BE GIVEN TASKS DURING AN INTERVIEW
 
 ## Pre-requisites
-- Visual Studio 2019 Comunity Edition is free
+- Visual Studio 2022 Comunity Edition is free
 - Visual Studio Code (or equivalent IDE)
 - Node
-- Dotnet core 3.1 sdk
+- .NET 6.0 SDK
 
 ## Setup  
 1. Clone the repository, check-out the `vanilla-js` branch.
