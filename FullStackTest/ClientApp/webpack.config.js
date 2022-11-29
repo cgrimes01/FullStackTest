@@ -13,10 +13,7 @@ module.exports = {
     path: path.resolve(__dirname, 'build')
   },
   plugins: [
-    new CopyPlugin([{
-      from: "public", 
-      to: "",
-    }]),
+    new CopyPlugin({ patterns: [{ from: "public", to: "" }] }),
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
   ],
   module: {
