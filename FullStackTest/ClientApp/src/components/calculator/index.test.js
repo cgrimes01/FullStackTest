@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, act } from '@testing-library/react';
 import Calculator from './';
 
 describe('Calculator', () => {
@@ -9,10 +9,12 @@ describe('Calculator', () => {
     const oneButton = getByRole('button', { name: '1' });
     const fourButton = getByRole('button', { name: '4' });
 
-    oneButton.click();
-    fourButton.click();
-    oneButton.click();
-    fourButton.click();
+    act(() => {
+      oneButton.click();
+      fourButton.click();
+      oneButton.click();
+      fourButton.click();
+    });
 
     expect(getByText('1414')).toBeTruthy();
   });
@@ -23,8 +25,10 @@ describe('Calculator', () => {
     const oneButton = getByRole('button', { name: '1' });
     const clearButton = getByRole('button', { name: 'AC' });
 
-    oneButton.click();
-    clearButton.click();
+    act(() => {
+      oneButton.click();
+      clearButton.click();
+    });
 
     expect(getByTestId('calculator-display')).toHaveTextContent('0');
   });
@@ -36,10 +40,12 @@ describe('Calculator', () => {
     const addButton = getByRole('button', { name: '+' });
     const equalButton = getByRole('button', { name: '=' });
 
-    oneButton.click();
-    addButton.click();
-    oneButton.click();
-    equalButton.click();
+    act(() => {
+      oneButton.click();
+      addButton.click();
+      oneButton.click();
+      equalButton.click();
+    });
 
     expect(getByTestId('calculator-display')).toHaveTextContent('2');
   });
